@@ -16,6 +16,7 @@ int main()
 #else
     int array[BUFFER_SIZE];
 #endif
+
     for (int idx = 0; idx < BUFFER_SIZE; idx++)
     {
         printf("array[%d] = %d\n", idx, array[idx]);
@@ -23,14 +24,6 @@ int main()
 
     int len = sizeof(array);
     printf("len %d\n", len);
-
-    //地址
-    printf("%p\n", array);
-    printf("%p\n", &array[0]);
-    printf("%p\n", &array[1]);
-    printf("%p\n", &array[9]);
-    //数组的（首）地址，和数组的首元素的地址是一样的
-
 
     //清除脏数据
     memset(array, 0, sizeof(array));
@@ -40,6 +33,19 @@ int main()
     {
         printf("array[%d] = %d\n", idx, array[idx]);
     }
+
+    //地址
+    printf("%p\n", array);
+    printf("%p\n", &array[0]);
+    printf("%p\n", &array[1]);
+    printf("%p\n", &array[9]);
+    //数组的（首）地址，和数组的首元素的地址是一样的
+    
+    //数组的越界访问
+    //判断索引的有效性
+    printf("array[-1]: %d\n", array[-1]);
+    printf("array[10]: %d\n", array[10]);
+
 
     return 0;
 }

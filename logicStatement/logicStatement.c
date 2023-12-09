@@ -147,8 +147,6 @@ int main()
         printf("varaNum: %d\n", varaNum);
     } while (varaNum);
     
-
-
 #endif
     return 0;
 }

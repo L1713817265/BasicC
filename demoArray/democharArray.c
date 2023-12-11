@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-
 #define SUFFER_SIZE 10
-
 
 int main()
 {

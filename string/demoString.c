@@ -62,6 +62,5 @@ int main()
     printf("*ptr: %c\t*(ptr + 1): %c\tptr: %s\n",*ptr, *(ptr + 1), ptr);
 #endif
 
-
     return 0;
 }

@@ -2,7 +2,7 @@
 
 #define BUFFER_SIZE 10
 
-
+int a= 0;
 
 int main()
 {

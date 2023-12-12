@@ -29,7 +29,7 @@ int main()
     int len = strlen(array);
     printf("len: %d\n",len);
 
-    //第二个 strcopy
+    //第二个 strcpy
     char name[BUFFER_SIZE];
     memset(name, 0, sizeof(name));
     strcpy(name, "zhangSan");

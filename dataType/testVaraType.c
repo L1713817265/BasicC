@@ -10,9 +10,9 @@ int main()
     int len = sizeof (bigValue); 
     printf ("len: %d,bigValue = %ld\n" , len , bigValue);
 
-    /*变量的命名：数字，字母，下划线。只能以字母和下划线开头*/
-    /*数据类型对应的是内存的储存空间*/
-    int age = 6;
+    /*变量的命名：数字，字母，下划线。只能以字母和下划线开头*/
+    /*数据类型对应的是内存的储存空间*/
+    int age = 6;
     len = sizeof (age);   /*整形就是整数*/ 
     printf ("len: %d, age = %d\n" , len , age);/*%d就是打印整数*/
     printf ("hello world!\n");
@@ -23,7 +23,7 @@ int main()
 #endif
 
 #if 0
-   /* 浮点数 */
+    /* 浮点数 */
     float weight = 50.5;
     int len = sizeof(weight);  
     printf ("len: %d, weight = %f\n ", len , weight); /* %f就是打印小数/浮点数 */
@@ -53,21 +53,21 @@ int main()
 #endif
 
 #if 0
-   /*无符号 和 有符号的区别*/
-    unsigned char m_value = -1;
-    int len  = sizeof (m_value);
-    printf ("len: %d, sex = %c sex = %d\n" , len,  m_value , m_value );
+    /*无符号 和 有符号的区别*/
+    unsigned char m_value = -1;
+    int len  = sizeof (m_value);
+    printf ("len: %d, sex = %c sex = %d\n" , len,  m_value , m_value );
 
-    int value = 6.6; 
-    len = sizeof (value);
-    printf ("len: %d, value = %d\n" , len , value);
+    int value = 6.6; 
+    len = sizeof (value);
+    printf ("len: %d, value = %d\n" , len , value);
 #endif
 
 #if 0
-      /*表达式 & 运算符*/ 
-      /*运算符 + - */
-      int val = 10;
-      printf("val:%d\n", val);
+    /*表达式 & 运算符*/ 
+    /*运算符 + - */
+    int val = 10;
+    printf("val:%d\n", val);
 #endif
 
 #if 1
@@ -83,15 +83,18 @@ int main()
 #endif
 
 #if 0
-      /*括号的优先级最高 运算符的优先级用括号的限制*/
-      /*后置++*/
-       val++;    // val = val + 1
-       printf("val:%d\n", val);
-       val--;    
-       printf("val:%d\n", val);
+    /*括号的优先级最高 运算符的优先级用括号的限制*/
+    /*后置++*/
+    val++;    // val = val + 1
+    printf("val:%d\n", val);
+    val--;    
+    printf("val:%d\n", val);
 
-       /*前置++*/
-
+    /*前置++*/
+    ++val;    // val = val + 1
+    printf("val:%d\n", val);
+    --val;    
+    printf("val:%d\n", val);
 #endif
 
     return 0;
